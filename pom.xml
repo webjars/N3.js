@@ -42,7 +42,8 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <upstream.version>0.4.0</upstream.version>
-        <upstream.url>@@https://raw.githubusercontent.com/RubenVerborgh/N3.js/browser/n3-browser.min.js/${upstream.version}</upstream.url>
+        <upstream.sha>799fee7697f11d58daf73b5744d7f0e7414adbff</upstream.sha>
+        <upstream.url>https://raw.githubusercontent.com/RubenVerborgh/N3.js/${upstream.sha}/</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
     </properties>
 
@@ -60,9 +61,9 @@
                             <goal>download-single</goal>
                         </goals>
                         <configuration>
-                            <url>${upstream.url}/js</url>
-                            <fromFile>jquery.terminal-${upstream.version}.js</fromFile>
-                            <toFile>${destDir}/jquery.terminal.js</toFile>
+                            <url>${upstream.url}</url>
+                            <fromFile>n3-browser.js</fromFile>
+                            <toFile>${destDir}/n3-browser.js</toFile>
                         </configuration>
                     </execution>
                     <execution>
@@ -72,21 +73,9 @@
                             <goal>download-single</goal>
                         </goals>
                         <configuration>
-                            <url>${upstream.url}/js</url>
-                            <fromFile>jquery.terminal-${upstream.version}.min.js</fromFile>
-                            <toFile>${destDir}/jquery.terminal.min.js</toFile>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>download-css</id>
-                        <phase>process-resources</phase>
-                        <goals>
-                            <goal>download-single</goal>
-                        </goals>
-                        <configuration>
-                            <url>${upstream.url}/css</url>
-                            <fromFile>jquery.terminal.css</fromFile>
-                            <toDir>${destDir}</toDir>
+                            <url>${upstream.url}</url>
+                            <fromFile>n3-browser.min.js</fromFile>
+                            <toFile>${destDir}/n3-browser.min.js</toFile>
                         </configuration>
                     </execution>
                 </executions>
