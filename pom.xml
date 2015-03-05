@@ -11,7 +11,7 @@
   <packaging>jar</packaging>
   <groupId>org.webjars</groupId>
   <artifactId>N3.js</artifactId>
-  <version>0-SNAPSHOT</version>
+  <version>9a8de1fc6c-SNAPSHOT</version>
   <name>N3.js</name>
   <description>WebJar for N3.js</description>
   <url>http://webjars.org</url>
@@ -41,8 +41,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <upstream.version>799fee7697</upstream.version>
-    <upstream.sha>799fee7697f11d58daf73b5744d7f0e7414adbff</upstream.sha>
+    <upstream.version>9a8de1fc6c</upstream.version>
+    <upstream.sha>9a8de1fc6ca8bc6f229f1e9fdc06a76f71125e7f</upstream.sha>
     <upstream.url>https://raw.githubusercontent.com/RubenVerborgh/N3.js/${upstream.sha}/</upstream.url>
     <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
   </properties>
