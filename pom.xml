@@ -11,7 +11,7 @@
   <packaging>jar</packaging>
   <groupId>org.webjars</groupId>
   <artifactId>N3.js</artifactId>
-  <version>9a8de1fc6c-SNAPSHOT</version>
+  <version>9a8de1fc6c</version>
   <name>N3.js</name>
   <description>WebJar for N3.js</description>
   <url>http://webjars.org</url>
@@ -36,7 +36,7 @@
     <url>http://github.com/webjars/N3.js</url>
     <connection>scm:git:https://github.com/webjars/N3.js.git</connection>
     <developerConnection>scm:git:https://github.com/webjars/N3.js.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>N3.js-9a8de1fc6c</tag>
   </scm>
 
   <properties>
